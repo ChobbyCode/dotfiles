@@ -59,4 +59,11 @@ return require('packer').startup(function(use)
 
   use 'OrangeT/vim-csharp'
   use 'jlcrochet/vim-razor'
+
+
+  use {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    requires = { {"nvim-lua/plenary.nvim"} }
+  }
 end)
