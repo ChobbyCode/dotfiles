@@ -30,4 +30,14 @@ require("lspconfig").lua_ls.setup {
 require("lspconfig").csharp_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
+  Lua = {
+    diagnostics = {
+      globals = {
+        -- ASP.NET Globals
+        "_config",
+        "NavManager",
+        "_clientFactory"
+      }
+    }
+  }
 }
