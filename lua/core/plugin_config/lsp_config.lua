@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "csharp_ls" }
+  ensure_installed = { "lua_ls", "csharp_ls", "tsserver" }
 })
 
 local on_attach = function(_, bufnr)
@@ -41,3 +41,4 @@ require("lspconfig").csharp_ls.setup {
     }
   }
 }
+

@@ -8,13 +8,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Colour Scheme
-  use({
-    'rose-pine/neovim',
-    as = 'rose-pine',
-    config = function()
-        vim.cmd('colorscheme rose-pine')
-    end
-})
+  use { 'sainnhe/everforest' }
 
   -- File Tree
   use {
@@ -66,4 +60,6 @@ return require('packer').startup(function(use)
     branch = "harpoon2",
     requires = { {"nvim-lua/plenary.nvim"} }
   }
+
+  use 'ThePrimeagen/vim-be-good'
 end)

@@ -6,5 +6,5 @@ require("core.plugin_config.lsp_config")
 require("core.plugin_config.completions")
 require("core.plugin_config.autoclose")
 require("core.plugin_config.harpoon")
-
+require("core.plugin_config.colours")
 
