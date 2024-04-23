@@ -10,6 +10,9 @@ These are my dotfiles, also know as your config files. My dotfiles setup is base
 To install my dotfiles run the following commands:
 
 ```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+```
 git clone github.com/ChobbyCode/dotfiles
 ```
 ```
