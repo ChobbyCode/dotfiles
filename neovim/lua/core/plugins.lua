@@ -8,7 +8,8 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Colour Scheme
-  use { 'sainnhe/everforest' }
+  --  use { 'sainnhe/everforest' }
+  use "rebelot/kanagawa.nvim"
 
   -- File Tree
   use {
@@ -37,15 +38,15 @@ return require('packer').startup(function(use)
   }
   
   -- Snippets & Autocomplete
-  use {
-    'hrsh7th/nvim-cmp',
-    requires = {
-      'hrsh7th/cmp-nvim-lsp',
-      'hrsh7th/cmp-buffer',
-      'hrsh7th/cmp-path',
-      'L3MON4D3/LuaSnip',
-    }
-  }
+  -- use {
+  -- 'hrsh7th/nvim-cmp',
+  --  requires = {
+  --    'hrsh7th/cmp-nvim-lsp',
+  --    'hrsh7th/cmp-buffer',
+  --    'hrsh7th/cmp-path',
+  --    'L3MON4D3/LuaSnip',
+--    }
+--  }
   -- Auto Close
   use 'm4xshen/autoclose.nvim'
 
@@ -53,7 +54,11 @@ return require('packer').startup(function(use)
 
   use 'OrangeT/vim-csharp'
   use 'jlcrochet/vim-razor'
+  --  use 'OmniSharp/omnisharp-vim'
 
+  -- Auto Complete & C# Stuff
+  -- Dis Wrong One use 'neoclide/coc.nvim'
+  use {'neoclide/coc.nvim', branch = 'release'}
 
   use {
     "ThePrimeagen/harpoon",
