@@ -9,7 +9,8 @@ return require('packer').startup(function(use)
 
   -- Colour Scheme
   --  use { 'sainnhe/everforest' }
-  use "rebelot/kanagawa.nvim"
+  -- use "rebelot/kanagawa.nvim"
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- File Tree
   use {
@@ -66,5 +67,27 @@ return require('packer').startup(function(use)
     requires = { {"nvim-lua/plenary.nvim"} }
   }
 
+  use 'lewis6991/gitsigns.nvim'
+
   use 'ThePrimeagen/vim-be-good'
+
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
+
+  -- Markdown Preview
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
+
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
+  -- Zen Mode
+  use { 'folke/zen-mode.nvim' }
+
+  use	{ 'echasnovski/mini.animate', version = false }
 end)
