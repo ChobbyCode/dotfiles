@@ -27,4 +27,6 @@ vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.opt.colorcolumn = "80"
 
 
+-- Error Read
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
 

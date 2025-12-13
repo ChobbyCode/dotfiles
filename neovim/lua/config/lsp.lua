@@ -8,3 +8,14 @@ vim.lsp.config("clangd", {
 
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("clangd")
+
+vim.diagnostic.config({
+  virtual_text = {
+    severity = vim.diagnostic.severity.ERROR,
+  },
+  signs = true,
+  underline = {
+    severity = vim.diagnostic.severity.ERROR,
+  },
+  update_in_insert = false,
+})
